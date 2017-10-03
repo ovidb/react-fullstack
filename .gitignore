@@ -2,3 +2,5 @@ node_modules
 .idea
 *.log
 dev.js
+.env.development
+.env.production
