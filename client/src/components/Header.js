@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { withStyles } from 'material-ui/styles';
-import AppBar from 'material-ui/AppBar';
-import Toolbar from 'material-ui/Toolbar';
-import Typography from 'material-ui/Typography';
-import Button from 'material-ui/Button';
-import IconButton from 'material-ui/IconButton';
-import MenuIcon from 'material-ui-icons/Menu';
-import { grey } from 'material-ui/colors';
+import { withStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import { grey } from '@material-ui/core/colors';
 
 import { Link } from 'react-router-dom';
 
@@ -32,13 +32,13 @@ const styles = theme => ({
 });
 
 const LoginWithGoogle = () => (
-  <Button href="/auth/google" color="contrast">
+  <Button href="/auth/google" color="inherit">
     Login with Google
   </Button>
 );
 
 const LogOut = () => (
-  <Button href="/api/logout" color="contrast">
+  <Button href="/api/logout" color="inherit">
     Log Out
   </Button>
 );
@@ -63,7 +63,7 @@ class Header extends Component {
           <Toolbar>
             <IconButton
               className={classes.menuButton}
-              color="contrast"
+              color="inherit"
               aria-label="Menu"
             >
               <MenuIcon />
